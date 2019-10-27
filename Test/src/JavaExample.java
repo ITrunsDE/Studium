@@ -6,6 +6,8 @@ public class JavaExample {
 	
 	public static void main(String[] args) {
 		
+		
+		// Open registry path
 		RegistryKey k = RegistryKey.parseKey("HKEY_LOCAL_MACHINE");
 		RegistryKey key = new RegistryKey(k, "\\SOFTWARE\\7-Zip");
 		String path = key.getValue("Path").toString();
